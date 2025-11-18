@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume • Prem Mahesuriya</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .title { text-align: center; font-size: 42px; font-weight: 800; }
+    .subtitle { text-align: center; color:#94a3b8; margin-bottom: 40px; }
+
+    .blue-line {
+      width: 80px;
+      height: 3px;
+      background:#3b82f6;
+      margin: 10px auto 40px auto;
+      border-radius: 10px;
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 25px;
+    }
+
+    .card-resume {
+      background:#0b1220;
+      padding: 28px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.05);
+      margin-bottom: 25px;
+    }
+
+    .icon-box {
+      width: 45px;
+      height: 45px;
+      background: rgba(59,130,246,0.18);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      padding: 6px 12px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      display: inline-block;
+      margin: 4px;
+      font-size: 14px;
+    }
+
+    @media(max-width:900px) {
+      .resume-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">Prem Mahesuriya</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a class="active" href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- MAIN -->
+<div class="container" style="padding-top:130px">
+
+  <h1 class="title">Resume</h1>
+  <p class="subtitle">My professional journey and qualifications</p>
+  <div class="blue-line"></div>
+
+  <div class="resume-grid">
+
+    <!-- LEFT SIDE -->
+    <div>
+
+      <!-- Education -->
+      <div class="card-resume">
+        <div class="icon-box">🎓</div>
+        <h2>Education</h2>
+
+        <h3 style="margin-top:10px;">Bachelor of Technology in Computer Engineering</h3>
+        <p class="muted">Pandit Deendayal Energy University, Gandhinagar</p>
+        <p class="muted">2023 – 2027</p>
+
+        <p style="margin-top:8px;"><strong>CGPA: 8.96</strong></p>
+      </div>
+
+      <!-- Experience -->
+      <div class="card-resume">
+        <div class="icon-box" style="background:rgba(16,185,129,0.2)">💼</div>
+        <h2>Experience</h2>
+
+        <h3 style="margin-top:10px;">Data Science & ML Intern</h3>
+        <p class="muted">Tech Innovations Ltd — (Mar 2025 – May 2025)</p>
+
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Developed ML models for forecasting & segmentation.</li>
+          <li>Performed data cleaning, transformation & visualization.</li>
+          <li>Built scalable feature engineering pipelines.</li>
+          <li>Collaborated with team for result-driven insights.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div>
+
+      <!-- Quick Stats -->
+      <div class="card-resume">
+        <h2>Quick Stats</h2>
+        <p><strong>Education:</strong> B.Tech CE (8.96 CGPA)</p>
+        <p><strong>Experience:</strong> 2 Months Internship</p>
+        <p><strong>Projects:</strong> 3 Major Projects</p>
+        <p><strong>DSA Solved:</strong> 300+ Problems</p>
+      </div>
+
+      <!-- Coursework -->
+      <div class="card-resume">
+        <h2>Coursework</h2>
+        <span class="tag">Data Structures & Algorithms</span>
+        <span class="tag">Object-Oriented Programming</span>
+        <span class="tag">DBMS</span>
+        <span class="tag">Operating Systems</span>
+        <span class="tag">Computer Networks</span>
+        <span class="tag">Machine Learning</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

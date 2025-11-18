@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact • Prem Mahesuriya</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .section-title {text-align:center; margin-bottom:10px;}
+    .subtitle {text-align:center; color:#94a3b8; margin-bottom:40px;}
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: #0b1220;
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 18px;
+    }
+
+    .contact-item-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(124,58,237,0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      font-size: 20px;
+    }
+
+    .connect-btn {
+      width: 100%;
+      padding: 12px 0;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      border: none;
+      background: #fff;
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+      text-align:left;
+      padding-left: 18px;
+    }
+
+    .send-form input,
+    .send-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 14px;
+      border-radius: 10px;
+      background: #0f1629;
+      border: 1px solid rgba(255,255,255,0.08);
+      color: white;
+    }
+
+    .send-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #7c3aed;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    @media(max-width:900px){
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">Prem Mahesuriya</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a class="active cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container" style="padding-top:130px">
+
+  <h1 class="section-title">Get in Touch</h1>
+  <p class="subtitle">Let's discuss opportunities, collaborations, or just connect.</p>
+
+  <div class="contact-grid">
+
+    <!-- LEFT: CONTACT INFORMATION -->
+    <div>
+      <div class="contact-card">
+
+        <h2>Contact Information</h2>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div>
+            <strong>Email</strong><br>
+            23BCP286@sot.pdpu.ac.in
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <strong>Phone</strong><br>
+            +91 9429064241
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <strong>Location</strong><br>
+            Gandhinagar, Gujarat, India
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+
+      <div class="contact-card">
+        <h2>Connect Online</h2>
+
+        <button class="connect-btn" onclick="window.location.href='https://www.linkedin.com/in/prem-mahesuriya-8b6bb5345/'">
+          LinkedIn Profile
+        </button>
+
+        <button class="connect-btn" onclick="window.location.href='https://github.com/PremMahesuriya'">
+          GitHub Profile
+        </button>
+
+      </div>
+    </div>
+
+    <!-- RIGHT: SEND MESSAGE FORM -->
+    <div>
+      <div class="contact-card">
+        <h2>Send a Message</h2>
+
+        <form class="send-form" action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" rows="6" placeholder="Message" required></textarea>
+          <button class="send-btn">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

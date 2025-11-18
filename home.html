@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home • Prem Mahesuriya</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 70px 10px;
+      min-height: 90vh;
+      background: radial-gradient(circle at 10% 30%, rgba(80,80,150,0.25), transparent 60%);
+    }
+
+    .hero-left {
+      max-width: 55%;
+      padding-left: 20px;
+    }
+
+    .big-title {
+      font-size: 58px;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: #c9d6ff;
+    }
+
+    .hero-sub {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #e8ecff;
+    }
+
+    .hero-info {
+      color: #8fa3d1;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .hero-desc {
+      line-height: 1.6;
+      font-size: 16px;
+      max-width: 500px;
+      color: #e6e9f2;
+      margin-bottom: 35px;
+    }
+
+    .btn-primary {
+      background: #6366f1;
+      padding: 12px 25px;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      margin-right: 12px;
+      transition: 0.2s;
+    }
+
+    .btn-primary:hover { opacity: 0.85; }
+
+    .btn-outline {
+      background: white;
+      color: #111;
+      padding: 12px 28px;
+      border-radius: 10px;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-outline:hover { background: #e3e3e3; }
+
+    .hero-right img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid rgba(255,255,255,0.3);
+      box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    }
+
+    @media(max-width:1000px){
+      .hero { flex-direction: column; text-align:center; }
+      .hero-left { max-width: 90%; padding-left: 0; }
+      .hero-right img { margin-top: 30px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">Prem Mahesuriya</div>
+    <nav>
+      <a class="active" href="home.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a class="cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="container" style="padding-top:120px;">
+  <section class="hero">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+      <h1 class="big-title">Hi, I'm<br>Prem Mahesuriya</h1>
+      <p class="hero-sub">Full Stack Developer</p>
+      <p class="hero-info">B.Tech CSE — PDEU Gandhinagar • CGPA: <span style="color:#7aa2ff; font-weight:700;">8.67</span></p>
+
+      <p class="hero-desc">
+        I build scalable systems, clean UI/UX, and meaningful product experiences
+        with precision and purpose. I enjoy combining engineering and design to
+        bring impactful ideas to life.
+      </p>
+
+      <button class="btn-primary" onclick="window.location.href='projects.html'">
+        View My Work →
+      </button>
+
+      <button class="btn-outline" onclick="window.location.href='resume.html'">
+        ⬇ Resume
+      </button>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right">
+      <img src="profile_image.png" alt="Prem Photo">
+    </div>
+
+  </section>
+</div>
+
+</body>
+</html>
